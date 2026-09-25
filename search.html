@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Find a Stay | Basera</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="navbar"><a class="logo" href="index.html"><span>⌂</span> basera</a><nav><a class="active" href="search.html">Find a Stay</a><a href="compare.html">Compare</a><a href="favourites.html">Favourites <span id="favCount" class="badge">0</span></a><a href="owner.html" class="nav-btn">List Your Property</a></nav></header>
+<main>
+<section class="page-title"><p class="eyebrow">DISCOVER YOUR NEXT HOME</p><h1>Find a stay that works for you.</h1><p>Search, filter and compare accommodation around your college.</p></section>
+<section class="search-layout">
+<aside class="filters">
+<h3>Filters</h3>
+<label>Search<input id="q" placeholder="College, area, property..."></label>
+<label>Type<select id="type"><option value="">All types</option><option>PG</option><option>Flat</option><option>Hostel</option></select></label>
+<label>Maximum rent <span id="rentValue">₹15,000</span><input id="rent" type="range" min="3000" max="15000" step="500" value="15000"></label>
+<label>Room type<select id="room"><option value="">Any room</option><option>Single</option><option>Double</option><option>Triple</option><option>1 BHK</option><option>2 BHK</option></select></label>
+<label>Minimum rating<select id="rating"><option value="0">Any rating</option><option value="4">4+</option><option value="4.5">4.5+</option></select></label>
+<div class="check"><input id="food" type="checkbox"><label for="food">Food available</label></div>
+<div class="check"><input id="wifi" type="checkbox"><label for="wifi">Wi-Fi</label></div>
+<div class="check"><input id="ac" type="checkbox"><label for="ac">AC</label></div>
+<div class="check"><input id="verified" type="checkbox"><label for="verified">Verified only</label></div>
+<button class="secondary full" onclick="resetFilters()">Reset filters</button>
+</aside>
+<section class="results">
+<div class="result-bar"><div><strong id="resultCount">0</strong> stays found</div><select id="sort"><option value="recommended">Recommended</option><option value="priceLow">Price: Low to High</option><option value="priceHigh">Price: High to Low</option><option value="rating">Top Rated</option></select></div>
+<div id="listingGrid" class="listing-grid"></div>
+</section>
+</section>
+</main>
+<footer><div class="logo"><span>⌂</span> basera</div><p>Student accommodation, simplified.</p></footer>
+<script src="js/data.js"></script><script src="js/app.js"></script>
+</body></html>

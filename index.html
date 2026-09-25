@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basera | Find Your Place</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html"><span>⌂</span> basera</a>
+  <nav>
+    <a href="search.html">Find a Stay</a>
+    <a href="compare.html">Compare</a>
+    <a href="favourites.html">Favourites <span id="favCount" class="badge">0</span></a>
+    <a href="owner.html" class="nav-btn">List Your Property</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">STUDENT ACCOMMODATION, SIMPLIFIED</p>
+    <h1>Find a place<br><span>that feels like home.</span></h1>
+    <p class="hero-text">Discover PGs, flats and hostels near your college. Compare what matters, understand the real cost, and choose with confidence.</p>
+    <div class="search-box">
+      <input id="homeSearch" type="text" placeholder="Search by college, area or locality">
+      <select id="homeType">
+        <option value="">All stays</option>
+        <option value="PG">PG</option>
+        <option value="Flat">Flat</option>
+        <option value="Hostel">Hostel</option>
+      </select>
+      <button onclick="goSearch()">Search stays →</button>
+    </div>
+    <div class="quick-tags">
+      <button onclick="quickSearch('KIET')">Near KIET</button>
+      <button onclick="quickSearch('Raj Nagar')">Raj Nagar</button>
+      <button onclick="quickSearch('Vaishali')">Vaishali</button>
+      <button onclick="quickSearch('Crossings Republik')">Crossings Republik</button>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="hero-image gradient-house">🏠</div>
+    <div class="hero-mini">
+      <div><strong>1,200+</strong><small>stays discovered</small></div>
+      <div><strong>4.6/5</strong><small>student rating</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <div><p class="eyebrow">EXPLORE</p><h2>Find what fits your life.</h2></div>
+    <a href="search.html">View all →</a>
+  </div>
+  <div class="category-grid">
+    <a class="category-card" href="search.html?type=PG"><span>🛏️</span><h3>PGs</h3><p>Ready-to-move stays with useful amenities.</p></a>
+    <a class="category-card" href="search.html?type=Flat"><span>🏢</span><h3>Flats</h3><p>1, 2 & 3 BHK options for independent living.</p></a>
+    <a class="category-card" href="search.html?type=Hostel"><span>🏫</span><h3>Hostels</h3><p>Budget-friendly student accommodation.</p></a>
+    <a class="category-card" href="search.html?feature=verified"><span>✓</span><h3>Verified stays</h3><p>Explore properties marked as verified.</p></a>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="section-head"><div><p class="eyebrow">POPULAR AROUND STUDENTS</p><h2>Stays near KIET</h2></div><a href="search.html?q=KIET">See nearby →</a></div>
+  <div id="homeListings" class="listing-grid"></div>
+</section>
+
+<section class="why section">
+  <div><p class="eyebrow">WHY BASERA?</p><h2>Don't just find a room.<br><span>Find the right one.</span></h2></div>
+  <div class="feature-list">
+    <div><b>01</b><div><h3>Compare easily</h3><p>See rent, distance, amenities and ratings side by side.</p></div></div>
+    <div><b>02</b><div><h3>Know the real cost</h3><p>Look beyond advertised rent and account for common extra expenses.</p></div></div>
+    <div><b>03</b><div><h3>Choose with confidence</h3><p>Use reviews, property details and location information before enquiring.</p></div></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="logo"><span>⌂</span> basera</div><p>Find your place. Make it home.</p><p>Prototype · MCA Project · 2026–27</p></footer>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
