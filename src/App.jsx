@@ -56,7 +56,6 @@ function Footer() {
         <span>⌂</span> basera
       </div>
       <p>Find your place. Make it home.</p>
-      <p>Semester 1 · React frontend prototype · Demo data</p>
     </footer>
   );
 }
